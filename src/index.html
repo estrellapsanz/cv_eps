@@ -1,27 +1,53 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
-  </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
-    <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
+        <!-- do not remove this line! -->
+        <title>CV Estrella Parrilla Sanz</title>
+    </head>
+    <body>
+        <main class="cv-container">
+            <section>
+                <div class="profile">
+                    <picture>
+                        <source
+                            srcset="./assets/images/img_estrella_cv.png?as=webp&width=250"
+                            type="image/webp"
+                            class="cv-container__logo"
+                        />
+                        <img
+                            src="./assets/images/img_estrella_cv.png?width=350"
+                            alt="Estrella Parrilla Sanz"
+                            class="cv-container__logo"
+                        />
+                    </picture>
+                    <h1 class="cv-title">ESTRELLA PARRILLA SANZ</h1>
+                    <h2>SOFTWARE ENGINEER</h2>
+                </div>
+
+                <div class="contact-info contact-info-left">
+                    <p>Contact Info</p>
+                    <ul class="contact-info__ul">
+                        <li><i class="fa fa-phone"></i>+123456789</li>
+                        <li><i class="fa fa-envelope"></i>loremipsum@amail.com</li>
+                        <li><i class="fa fa-globe"></i>lorem.ipsum.web</li>
+                        <li><i class="fa fa-github"></i>loremipsum.github.com</li>
+                        <li><i class="fa fa-map-marker"></i>70 Dream St, USA</li>
+                    </ul>
+                </div>
+                <div class="skills"></div>
+                <!-- <p>
+                    This is a starter template for the Advanced HTML and CSS Tools courses from the
+                    Master's Program in Multimedia Applications and the Master's Program in Web App
+                    and Website Development at the Universitat Oberta de Catalunya.
+                </p>-->
+            </section>
+        </main>
+        <include src="./views/footer.html"></include>
+        <script type="module" src="./assets/scripts/main.js"></script>
+        <!-- do not remove this line! -->
+    </body>
 </html>
