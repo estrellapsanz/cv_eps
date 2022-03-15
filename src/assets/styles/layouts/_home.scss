@@ -111,6 +111,81 @@ body {
     &--bleft {
         border-left: 3px solid #a5a3a3;
     }
+    &--bright {
+        border-right: 3px solid #a5a3a3;
+    }
+
+    &--pleft {
+        padding-left: 3%;
+    }
+}
+
+.cv-education {
+    /*elementos*/
+    &__card {
+        margin: 0% 0% 0% 0%;
+        padding: 1% 0% 0% 3%;
+        background-color: $about-info-bg;
+    }
+
+    /*modificadores*/
+    &--uppercase {
+        text-transform: uppercase;
+    }
+
+    &--left {
+        text-align: left;
+    }
+
+    &--detail {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        padding-bottom: 2rem;
+    }
+    &--bleft {
+        border-left: 3px solid #a5a3a3;
+    }
+    &--bright {
+        border-right: 3px solid #a5a3a3;
+    }
+
+    &--pleft {
+        padding-left: 3%;
+    }
+}
+
+.cv-others {
+    /*elementos*/
+    &__card {
+        margin: 0% 0% 0% 0%;
+        padding: 1% 0% 0% 3%;
+        background-color: $about-info-bg;
+    }
+
+    /*modificadores*/
+    &--uppercase {
+        text-transform: uppercase;
+    }
+
+    &--left {
+        text-align: left;
+    }
+
+    &--detail {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        padding-bottom: 2rem;
+    }
+    &--bleft {
+        border-left: 3px solid #a5a3a3;
+    }
+    &--bright {
+        border-right: 3px solid #a5a3a3;
+    }
+
+    &--pleft {
+        padding-left: 3%;
+    }
 }
 
 .cv-footer {
