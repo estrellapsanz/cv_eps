@@ -23,11 +23,36 @@ body {
     background-color: #fff;
     border-radius: 2rem;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
 
+.cv-little-card {
+    padding: 1% 0% 1% 3%;
+    margin: 1% 0% 1% 0%;
+    background-color: $contact-info-bg;
+    border-radius: 25px;
     /*modificadores*/
     &--left {
         text-align: left;
     }
+
+    &__ul {
+        list-style: none;
+    }
+}
+
+.cv-header {
+    /*modificadores*/
+    &--persona {
+        font-family: $font-family-serif;
+        font-size: 24px;
+        font-weight: 700;
+        color: $uoc-corporate;
+
+        @media (min-width: $mqMinWidth) {
+            font-size: 36px;
+        }
+    }
+
     /*elementos*/
     &__foto {
         display: block;
@@ -42,40 +67,10 @@ body {
             max-width: none;
         }
     }
-
-    &__card {
-        padding: 1% 0% 1% 3%;
-        margin: 1% 0% 1% 0%;
-        background-color: $contact-info-bg;
-        border-radius: 25px;
-    }
-
-    &__ul {
-        list-style: none;
-    }
 }
 
-.cv-nombre-persona {
-    font-family: $font-family-serif;
-    font-size: 24px;
-    font-weight: 700;
-    color: $uoc-corporate;
+/*.cv-about {
 
-    @media (min-width: $mqMinWidth) {
-        font-size: 36px;
-    }
-}
-
-.cv-about {
-    /*elementos*/
-    &__card {
-        padding: 1% 0% 1% 3%;
-        margin: 1% 0% 0% 0%;
-        background-color: $about-info-bg;
-        border-radius: 25px 25px 0px 0px;
-    }
-
-    /*modificadores*/
     &--uppercase {
         text-transform: uppercase;
     }
@@ -83,107 +78,36 @@ body {
     &--left {
         text-align: left;
     }
+}*/
+
+.cv-detail {
+    &--left {
+        text-align: left;
+    }
 }
 
-.cv-experience {
-    /*elementos*/
-    &__card {
-        padding: 1% 0% 0% 3%;
-        margin: 0% 0% 0% 0%;
-        background-color: $about-info-bg;
-        // border-radius: 25px;
-    }
+.cv-detail-card {
+    padding: 1% 0% 1% 3%;
+    margin: 0% 0% 0% 0%;
+    background-color: $about-info-bg;
+    border-radius: 0px 0px 0px 0px;
 
-    /*modificadores*/
-    &--uppercase {
+    /*modifiers*/
+    &--tittle {
         text-transform: uppercase;
     }
 
     &--left {
         text-align: left;
     }
-
-    &--detail {
+    &--explained {
         display: grid;
         grid-template-columns: 30% 70%;
         padding-bottom: 2rem;
     }
-    &--bleft {
+    &--format {
+        /*aqui decir que para no usar una sola regla para cada cosa se renombra asi*/
         border-left: 3px solid #a5a3a3;
-    }
-    &--bright {
-        border-right: 3px solid #a5a3a3;
-    }
-
-    &--pleft {
-        padding-left: 3%;
-    }
-}
-
-.cv-education {
-    /*elementos*/
-    &__card {
-        padding: 1% 0% 0% 3%;
-        margin: 0% 0% 0% 0%;
-        background-color: $about-info-bg;
-    }
-
-    /*modificadores*/
-    &--uppercase {
-        text-transform: uppercase;
-    }
-
-    &--left {
-        text-align: left;
-    }
-
-    &--detail {
-        display: grid;
-        grid-template-columns: 30% 70%;
-        padding-bottom: 2rem;
-    }
-    &--bleft {
-        border-left: 3px solid #a5a3a3;
-    }
-    &--bright {
-        border-right: 3px solid #a5a3a3;
-    }
-
-    &--pleft {
-        padding-left: 3%;
-    }
-}
-
-.cv-others {
-    /*elementos*/
-    &__card {
-        padding: 1% 0% 0% 3%;
-        margin: 0% 0% 0% 0%;
-        background-color: $about-info-bg;
-    }
-
-    /*modificadores*/
-    &--uppercase {
-        text-transform: uppercase;
-    }
-
-    &--left {
-        text-align: left;
-    }
-
-    &--detail {
-        display: grid;
-        grid-template-columns: 30% 70%;
-        padding-bottom: 2rem;
-    }
-    &--bleft {
-        border-left: 3px solid #a5a3a3;
-    }
-    &--bright {
-        border-right: 3px solid #a5a3a3;
-    }
-
-    &--pleft {
         padding-left: 3%;
     }
 }
