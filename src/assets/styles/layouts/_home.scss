@@ -18,42 +18,34 @@ body {
 .cv-container {
     max-width: 100%;
     padding: 2rem;
-    // margin: auto;
     text-align: center;
     background-color: #fff;
     border-radius: 2rem;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-}
 
-.cv-little-card {
-    padding: 1% 0% 1% 3%;
-    margin: 1% 0% 1% 0%;
-    background-color: $contact-info-bg;
-    border-radius: 25px;
-    /*modificadores*/
-    &--left {
-        text-align: left;
-    }
-
-    &__ul {
-        list-style: none;
+    @media only screen and (min-device-width: $mqMinWidthMobile) and (max-device-width: $mqMinWidth) {
+        padding: 0.5rem;
     }
 }
-
 .cv-header {
-    /*modificadores*/
-    &--persona {
-        font-family: $font-family-serif;
-        font-size: 24px;
-        font-weight: 700;
-        color: $uoc-corporate;
+    font-family: $font-family-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $uoc-corporate;
 
-        @media (min-width: $mqMinWidth) {
-            font-size: 36px;
+    //@media (min-width: $mqMinWidth) {
+    //     font-size: 36px;
+    // }
+    @media only screen and (min-device-width: $mqMinWidthMobile) and (max-device-width: $mqMinWidth) {
+        font-size: 1rem;
+        &--per {
+            font-size: 1rem;
+        }
+        &--prof {
+            font-size: 0.8rem;
         }
     }
 
-    /*elementos*/
     &__foto {
         display: block;
         max-width: 200px;
@@ -68,17 +60,45 @@ body {
         }
     }
 }
-
-/*.cv-about {
-
-    &--uppercase {
-        text-transform: uppercase;
-    }
+.cv-little-card {
+    padding: 1% 0% 1% 3%;
+    margin: 1% 0% 1% 0%;
+    background-color: $contact-info-bg;
+    border-radius: 25px;
 
     &--left {
         text-align: left;
     }
-}*/
+
+    &__ul {
+        list-style: none;
+    }
+
+    &__skills {
+        list-style: square;
+    }
+    @media only screen and (min-device-width: $mqMinWidthMobile) and (max-device-width: $mqMinWidth) {
+        margin-top: 3%;
+
+        &__tittle {
+            font-size: 0.65rem;
+        }
+        &__ul {
+            font-size: 0.55rem;
+            list-style: none;
+            padding-left: 1%;
+        }
+        &__skills {
+            list-style: square;
+            font-size: 0.55rem;
+            padding-left: 3%;
+        }
+        &__ref {
+            font-size: 0.55rem;
+            padding-left: 5%;
+        }
+    }
+}
 
 .cv-detail {
     &--left {
@@ -92,9 +112,18 @@ body {
     background-color: $about-info-bg;
     border-radius: 0px 0px 0px 0px;
 
-    /*modifiers*/
+    &__info {
+        @media only screen and (min-device-width: $mqMinWidthMobile) and (max-device-width: $mqMinWidth) {
+            font-size: 0.6rem;
+        }
+    }
+
     &--tittle {
         text-transform: uppercase;
+        @media only screen and (min-device-width: $mqMinWidthMobile) and (max-device-width: $mqMinWidth) {
+            font-size: 0.75rem;
+            text-transform: capitalize;
+        }
     }
 
     &--left {
@@ -109,6 +138,10 @@ body {
         /*aqui decir que para no usar una sola regla para cada cosa se renombra asi*/
         padding-left: 3%;
         border-left: 3px solid #a5a3a3;
+        @media only screen and (min-device-width: $mqMinWidthMobile) and (max-device-width: $mqMinWidth) {
+            font-size: 0.75rem;
+            text-transform: capitalize;
+        }
     }
 }
 
