@@ -84,18 +84,18 @@ body {
             font-size: 0.65rem;
         }
         &__ul {
+            padding-left: 1%;
             font-size: 0.55rem;
             list-style: none;
-            padding-left: 1%;
         }
         &__skills {
-            list-style: square;
-            font-size: 0.55rem;
             padding-left: 3%;
+            font-size: 0.55rem;
+            list-style: square;
         }
         &__ref {
-            font-size: 0.55rem;
             padding-left: 5%;
+            font-size: 0.55rem;
         }
     }
 }
