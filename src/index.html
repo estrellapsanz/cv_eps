@@ -1,23 +1,21 @@
-<!DOCTYPE html>
-
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width" />
-        <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
+<!doctype html>
+<html lang="es">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="./assets/styles/main.scss" />
+  <title>CV Estrella Parrilla Sanz</title>
+  </head>
+  <body>
+    <main class="cv-container">
+      <include src="views/partials/header.html"></include>
+      <include src="views/partials/about.html"></include>
+      <include src="views/partials/experience.html"></include>
+      <include src="views/partials/education.html"></include>
+      <include src="views/partials/others.html"></include>
+    </main>
+    <include src="./views/footer.html"></include>
+    <script type="module" src="./assets/scripts/main.js"></script>
         <!-- do not remove this line! -->
-        <title>CV Estrella Parrilla Sanz</title>
-    </head>
-    <body>
-        <main class="cv-container">
-            <include src="views/partials/header.html"></include>
-            <include src="views/partials/about.html"></include>
-            <include src="views/partials/experience.html"></include>
-            <include src="views/partials/education.html"></include>
-            <include src="views/partials/others.html"></include>
-        </main>
-        <include src="./views/footer.html"></include>
-        <script type="module" src="./assets/scripts/main.js"></script>
-        <!-- do not remove this line! -->
-    </body>
+  </body>
 </html>
