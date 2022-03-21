@@ -9,7 +9,7 @@ body {
     padding: 2rem;
     margin: 0;
     font-family: $font-family-sans-serif;
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.3rem;
     color: $uoc-corporate;
     background-color: $uoc-bg;
@@ -28,21 +28,18 @@ body {
     }
 }
 .cv-header {
-    font-family: $font-family-serif;
-    font-size: 1.5rem;
-    font-weight: 700;
+    // font-family: $font-family-serif;
+    //font-size: 1.5rem;
+    //font-weight: 700;
     color: $uoc-corporate;
 
-    //@media (min-width: $mqMinWidth) {
-    //     font-size: 36px;
-    // }
     @media only screen and (min-device-width: $mqMinWidthMobile) and (max-device-width: $mqMinWidth) {
         font-size: 1rem;
         &--per {
             font-size: 1rem;
         }
         &--prof {
-            font-size: 0.8rem;
+            font-size: 0.9rem;
         }
     }
 
@@ -60,7 +57,7 @@ body {
         }
     }
 }
-.cv-little-card {
+.cv-header-card {
     padding: 1% 0% 1% 3%;
     margin: 1% 0% 1% 0%;
     background-color: $contact-info-bg;
@@ -71,31 +68,39 @@ body {
     }
 
     &__ul {
+        line-height: 1.5rem;
         list-style: none;
     }
 
     &__skills {
+        line-height: 0.5rem;
         list-style: square;
+    }
+
+    &__tittle {
+        font-weight: 700;
+        text-transform: uppercase;
     }
     @media only screen and (min-device-width: $mqMinWidthMobile) and (max-device-width: $mqMinWidth) {
         margin-top: 3%;
+        font-size: 0.65rem;
 
         &__tittle {
-            font-size: 0.65rem;
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
         }
+
         &__ul {
             padding-left: 1%;
-            font-size: 0.55rem;
             list-style: none;
         }
         &__skills {
             padding-left: 3%;
-            font-size: 0.55rem;
             list-style: square;
         }
         &__ref {
             padding-left: 5%;
-            font-size: 0.55rem;
         }
     }
 }
@@ -114,25 +119,32 @@ body {
 
     &__info {
         @media only screen and (min-device-width: $mqMinWidthMobile) and (max-device-width: $mqMinWidth) {
+            padding: 1% 3% 1% 1%;
             font-size: 0.6rem;
+            text-align: justify;
         }
     }
 
     &--tittle {
         text-transform: uppercase;
         @media only screen and (min-device-width: $mqMinWidthMobile) and (max-device-width: $mqMinWidth) {
-            font-size: 0.75rem;
-            text-transform: capitalize;
+            font-size: 0.7rem;
         }
     }
 
-    &--left {
+    &--align {
         text-align: left;
+        @media only screen and (min-device-width: $mqMinWidthMobile) and (max-device-width: $mqMinWidth) {
+            text-align: center;
+        }
     }
     &--explained {
         display: grid;
         grid-template-columns: 30% 70%;
         padding-bottom: 2rem;
+        @media only screen and (min-device-width: $mqMinWidthMobile) and (max-device-width: $mqMinWidth) {
+            grid-template-columns: 40% 50%;
+        }
     }
     &--format {
         /*aqui decir que para no usar una sola regla para cada cosa se renombra asi*/

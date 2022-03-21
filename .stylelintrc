@@ -1,5 +1,5 @@
 {
-  "extends": ["stylelint-config-recommended-scss","stylelint-config-recess-order"],
+  "extends": ["stylelint-config-recess-order","stylelint-config-recommended-scss"],
   "rules": {
     "comment-no-empty": true,
       "block-no-empty": true,
