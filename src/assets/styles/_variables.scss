@@ -1,7 +1,7 @@
 @use 'sass:color';
 
 $font-family-sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
-    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 $font-family-serif: 'Georgia', 'Times New Roman', serif;
 
 $about-card: #d3d3fd;
@@ -13,5 +13,5 @@ $contact-info-target: #e5e7e9;
 $contact-info-bg: color.scale($contact-info-target, $lightness: 10%);
 $about-info-bg: color.scale($about-card, $lightness: 1%);
 
-$mqMinWidth: 420px;
-$mqMinWidthMobile: 320px;
+$mq-min-width: 420px;
+$mq-min-width-mobile: 320px;
